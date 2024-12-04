@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
         mViewModel = new ViewModelProvider(this).get(MainViewModel.class);
 
+
         mViewModel.getProgress().observe(this, new Observer<Integer>() {
             @Override
             public void onChanged(Integer visibility) {
